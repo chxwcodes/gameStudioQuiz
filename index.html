@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo Guesser</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main>
+        <div class="wrapper">
+            <!-- Intro section -->
+            <section class="intro">
+                <h1>How Well Do You Know Your Logos?</h1>
+                <h2>Video Game Studio Edition</h2>
+        
+                <p>It's no doubt that we spend a lot of time playing our favorite games and fall in love with its wonderful
+                character designs, immersive environment, and fluid mechanics.</p>
+        
+                <p>But let's take it back to basics and talk about logo designs! Here are some altered logos from some of the most recognized gaming studios out there.</p>
+        
+                <p>Do you think you can guess them all?</p>
+        
+                <button class="quizStart">Bring it on!</button>
+            </section>
+        
+            <!-- Quiz section -->
+            <section class="quizSection" hidden>
+                <!-- Question tracker board -->
+                <p>Question <span class="questionNumber"></span> of 10</p>
+        
+                <!-- Question picture -->
+                <p>What is this studio logo?</p>
+        
+                <!-- Image Container -->
+                <div class="imageContainer">
+                    <img src="" alt="" class="questionImage">
+                </div>
+        
+                <!-- Options container -->
+                <div class="optionsContainer">
+                    <!-- Answer options here -->
+                    <button class="options" id="optionA"></button>
+                    <button class="options" id="optionB"></button>
+                    <button class="options" id="optionC"></button>
+                    <button class="options" id="optionD"></button>
+                </div>
+        
+                <!-- Next/Submit button -->
+                <button class="next">Next</button>
+            </section>
+        
+            <!-- Score section -->
+            <section class="scoreSection" hidden>
+                <p>You scored:</p>
+                <p><span class="yourScore"></span> / 10</p>
+        
+                <button class="tryAgain">Restart Quiz</button>
+            </section>
+        </div>
+    </main>
+
+
+
+    <!-- JS Files -->
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' integrity='sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=' crossorigin='anonymous'></script>
+    <script src="./script.js"></script>
+</body>
+</html>
