@@ -13,71 +13,23 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
 }
 
-/* quiz section */
-.imageContainer,
-.optionsContainer {
-    width: 100%;
+// intro section
+.introContainer {
     display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.optionsContainer {
     flex-direction: column;
     align-items: center;
+    position: relative;
+
+    .imageContainer {
+        width: 70%;
+        opacity: 0.75;
+        position: absolute;
+        top: 10%;
+        z-index: -10;
+        transform: translatey(-100px);
+        animation: float 6s ease-in-out infinite;
+    }
 }
 
-.imageContainer img {
-    border-radius: 10px;
-}
-
-/* general button */
-.quizStart,
-.next,
-.tryAgain {
-    background-image: linear-gradient(to right, #9D50BB 0%, #6E48AA 51%, #9D50BB 100%);
-    box-shadow: 0 0 10px #eee;
-    background-size: 200% auto;
-    border-radius: 10px;
-    transition: 0.5s;
-    color: white;
-}
-
-.quizStart:hover,
-.next:hover,
-.tryAgain:hover {
-    background-position: right center;
-    cursor: pointer;
-}
-
-/* options buttons */
-.optionsContainer .options {
-    width: 600px;
-    margin-bottom: 10px;
-    background-image: linear-gradient(to right, #1FA2FF 0%, #12D8FA 51%, #1FA2FF 100%);
-    background-size: 200% auto;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-.optionsContainer .options:hover {
-    background-position: right center;
-    cursor: pointer;
-}
-
-.optionsContainer .options:last-child {
-    margin-bottom: 0;
-}
-
-.quizSection p:first-child,
-.scoreSection p:first-child {
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.scoreSection p:nth-child(2) {
-    font-size: 4rem;
-}

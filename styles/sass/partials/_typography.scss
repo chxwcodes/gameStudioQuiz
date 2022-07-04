@@ -1,13 +1,31 @@
-h1,
-h2 {
-    margin-top: 0;
-    margin-bottom: 10px;
+html {
+    font-size: 62.5%;
+    font-family: $bodyFont;
+    text-align: center;
+    color: $white;
+}
+
+h1, h2 {
+    margin: 15px 0;
+    font-family: $headingFont;
+    text-transform: uppercase;
 }
 
 h1 {
-    font-size: 4rem;
+    color: $yellow;
+    font-size: 11rem;
+    text-shadow: -8px 5px $black;
+    line-height: 9rem;
+    transform: rotate(-5deg);
+    width: 50%;
 }
 
 h2 {
-    font-size: 3rem;
+    color: $black;
+    font-size: 3.5rem;
+}
+
+p {
+    font-size: 2rem;
+    text-align: center;
 }

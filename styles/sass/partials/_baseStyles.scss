@@ -1,26 +1,10 @@
-html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: white;
+body {
+    background-color: $purple;
 }
 
-image {
+img {
     max-width: 100%;
     display: block;
-}
-
-p {
-    font-size: 2rem;
-    text-align: center;
-}
-
-button {
-    width: 300px;
-    height: 50px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2rem;
-    border: none;
 }
 
 .wrapper {
@@ -29,7 +13,22 @@ button {
     margin: 0 auto;
 }
 
-body {
-    background-image: linear-gradient(to top, #051937, #1e204e, #3f225f, #641c6a, #8b036d);
+//center things on screen
+main {
     height: 100vh;
+    position: relative;
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
 }
+
