@@ -13,6 +13,10 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-color: $white;
+    margin: auto;
+    border-radius: 20px;
+    padding: 50px;
 }
 
 // intro section
@@ -24,10 +28,8 @@ section {
 
     .imageContainer {
         width: 70%;
-        opacity: 0.75;
         position: absolute;
         top: 10%;
-        z-index: -10;
         transform: translatey(-100px);
         animation: float 6s ease-in-out infinite;
     }
