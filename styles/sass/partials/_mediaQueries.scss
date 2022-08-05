@@ -1,0 +1,32 @@
+@media (max-width: 1000px) {
+    section {
+        margin: auto 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        width: 100%;
+    }
+
+    button {
+        border-radius: 20px;
+    }
+
+    section {
+        margin: auto 20px;
+        padding: 20px 10px;
+    }
+
+    .introContainer .imageContainer {
+        transform: translatey(-120px);
+
+    }
+}
+
+/////////////////////////////////////////
+@media (max-height: 750px) {
+    .introContainer .imageContainer {
+            display: none;
+        }
+}

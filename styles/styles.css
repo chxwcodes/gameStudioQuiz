@@ -254,8 +254,12 @@ template {
   overflow: hidden;
 }
 
+html {
+  background-color: #9538d3;
+}
+
 body {
-  background: linear-gradient(15deg, #8628c5 50%, #7720B0 50%);
+  background: linear-gradient(15deg, #9538d3 50%, #7720B0 50%);
 }
 
 img {
@@ -302,7 +306,8 @@ button {
   border: none;
   background-color: #ffd042;
   color: #151515;
-  padding: 10px 70px;
+  padding: 10px 0;
+  width: 100%;
   margin-top: 20px;
   border-radius: 50px;
   border: 3px solid #ffd042;
@@ -330,16 +335,16 @@ h1, h2 {
 
 h1 {
   color: #ffd042;
-  font-size: 11rem;
+  font-size: clamp(4rem, 2.6rem + 7vw, 11rem);
+  line-height: clamp(4rem, 0.6rem + 7vw, 9rem);
   text-shadow: -8px 5px #151515;
-  line-height: 9rem;
   -webkit-transform: rotate(-5deg);
           transform: rotate(-5deg);
   width: 50%;
 }
 
 h2 {
-  font-size: 3.5rem;
+  font-size: clamp(3rem, 2.9rem + 0.5vw, 3.5rem);
 }
 
 p {
@@ -479,7 +484,37 @@ section {
   width: 50%;
 }
 
+.scoreSection {
+  padding: 20px 50px;
+}
 .scoreSection p:nth-child(2) {
   font-size: 5rem;
   margin: 50px 0 30px 0;
+}
+
+@media (max-width: 1000px) {
+  section {
+    margin: auto 50px;
+  }
+}
+@media (max-width: 500px) {
+  h1 {
+    width: 100%;
+  }
+  button {
+    border-radius: 20px;
+  }
+  section {
+    margin: auto 20px;
+    padding: 20px 10px;
+  }
+  .introContainer .imageContainer {
+    -webkit-transform: translatey(-120px);
+            transform: translatey(-120px);
+  }
+}
+@media (max-height: 750px) {
+  .introContainer .imageContainer {
+    display: none;
+  }
 }
